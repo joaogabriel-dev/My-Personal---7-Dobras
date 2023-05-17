@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Online - Porcentual de Gordura</title> 
+    <link rel="icon" type="icon" href="Fita.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- O atributo defer diz ao navegador para executar o script apenas quando a análise do HTML estiver finalizada. --> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <img src="Icon.png" width="135" height="135"/>  
+          <!-- <a href="https://www.flaticon.com/br/icones-gratis/musculacao" title="musculação ícones">Musculação ícones criados por DinosoftLabs - Flaticon</a>-->
+        </header>
+    
+        <div class="content">
+          <form id="form">
+            <div class="form-group">
+              <label for="gender">Sexo</label>
+              <select id="gender">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="age">Sua idade</label>
+              <!-- input type: Só números ~ min ="0": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" id="age" placeholder="Exemplo: 22"/> 
+            </div>
+            
+            <div class="form-group">
+              <label for="Triciptal">Triciptal</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="triceps" placeholder="Em milímetros" />
+            </div>
+            
+            <div class="form-group">
+              <label for="peitoral">Peitoral</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="peitoral" placeholder="Em milímetros" />
+            </div>
+
+            <div class="form-group">
+              <label for="Supra-Ilíaca">Supra-Ilíaca</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="supra" placeholder="Em milímetros" />
+            </div>
+            
+            <div class="form-group">
+              <label for="abd">Abdominal</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="abd" placeholder="Em milímetros" />
+            </div>
+
+            <div class="form-group">
+              <label for="coxa">Coxa</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="coxa" placeholder="Em milímetros" />
+            </div>
+
+            <div class="form-group">
+              <label for="sub">Subescapular</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="sub" placeholder="Em milímetros" />
+            </div>
+
+            <div class="form-group">
+              <label for="Axilar">Axilar Média</label>
+              <!-- input type: Só números ~ min ="1": Definindo como 0, o valor mínimo. -->
+              <input type="number" min="1" max="200" id="axilar" placeholder="Em milímetros" />
+            </div>
+            
+            <div class="form-group">
+              <button type="submit"><b>Calcular % de Gordura</b></button> 
+              <br>
+              <button type="reset"><b>Resetar</b></button>
+            </div>
+          </form>
+          <div class="result-container" id="result"></div>
+        </div>
+      </div> 
+      <div class="copyright"> 
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/joaogabriel-dev/" target="_blank" rel="noopener noreferrer">João Gabriel;</a></p>
+    </div>
+</body>
+</html>
